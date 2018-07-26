@@ -13,6 +13,9 @@
     <module>easyrpc-core</module>
     <module>serialize-protostuff</module>
     <module>protocol-arena</module>
+      <module>lb-routes</module>
+    <module>example</module>
+    <module>register-zk</module>
   </modules>
 
   <name>easyrpc</name>

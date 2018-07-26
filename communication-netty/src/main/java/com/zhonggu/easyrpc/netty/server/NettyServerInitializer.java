@@ -26,5 +26,6 @@ public class NettyServerInitializer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel socketChannel) throws Exception {
         ChannelPipeline pipeline = socketChannel.pipeline();
+        pipeline.addFirst(new NettyServerChannelHandle(executor,networkHandle));
     }
 }
