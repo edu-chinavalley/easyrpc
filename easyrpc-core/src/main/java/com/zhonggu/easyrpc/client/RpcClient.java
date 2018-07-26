@@ -32,7 +32,7 @@ public class RpcClient {
 
     public void start(){
         InetSocketAddress serviceAddress = InetSocketAddress.createUnresolved(host, port);
-        client.start(serviceAddress);
+        client.start(serviceAddress,protocol,null);
 
     }
 

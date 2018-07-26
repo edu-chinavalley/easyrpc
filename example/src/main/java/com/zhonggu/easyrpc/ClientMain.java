@@ -8,5 +8,8 @@ import com.zhonggu.easyrpc.netty.client.NettyClient;
  */
 public class ClientMain {
 
-    RpcClient rpc = new RpcClient(new NettyClient(null,null),null,null,"127.0.0.1",8888);
+    public static void main(String ...args) {
+        RpcClient rpc = new RpcClient(new NettyClient(), null, null, "127.0.0.1", 8888);
+        rpc.start();
+    }
 }
